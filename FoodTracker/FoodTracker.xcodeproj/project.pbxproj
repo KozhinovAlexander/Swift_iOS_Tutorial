@@ -142,7 +142,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = nuke;
+				ORGANIZATIONNAME = Nukersson;
 				TargetAttributes = {
 					A53A0A481EC0C40C00FBC229 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -408,6 +408,7 @@
 				A53A0A681EC0C40C00FBC229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A53A0A691EC0C40C00FBC229 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				A53A0A6B1EC0C40C00FBC229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
