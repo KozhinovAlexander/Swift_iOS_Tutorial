@@ -15,7 +15,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
 
+    // MARK: Overwritten functions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,10 +43,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
 
     func textFieldDidEndEditing(_ textField: UITextField) {
         mealNameLabel.text = textField.text
-    }
-
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        mealNameLabel.text = "Default Text"
     }
 
     //MARK: UIImagePickerControllerDelegate
