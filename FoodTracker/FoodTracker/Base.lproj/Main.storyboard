@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="615.20000000000005" y="69.715142428785612"/>
         </scene>
-        <!--Meal View Controller-->
+        <!--New Meal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,8 +80,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GeX-3J-uBz">
-                                <rect key="frame" x="16" y="72" width="343" height="410"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GeX-3J-uBz">
+                                <rect key="frame" x="16" y="84" width="343" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0J-ID-rvO">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -116,11 +116,15 @@
                             <constraint firstItem="GeX-3J-uBz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wlA-4a-k9k"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2jp-WS-W6a"/>
+                    <navigationItem key="navigationItem" title="New Meal" id="2jp-WS-W6a">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="C3h-kh-yCh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Zq2-v2-WG5"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="W0J-ID-rvO" id="mxP-j9-xUi"/>
                         <outlet property="photoImageView" destination="1NW-B7-6IX" id="95o-qo-vyL"/>
                         <outlet property="ratingControl" destination="znl-Vl-dhg" id="V6r-as-b6H"/>
+                        <outlet property="saveButton" destination="Zq2-v2-WG5" id="gpR-X7-HZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
