@@ -117,10 +117,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="2jp-WS-W6a">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="C3h-kh-yCh"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Zq2-v2-WG5"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="C3h-kh-yCh">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="vcl-Kn-GL6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Zq2-v2-WG5">
+                            <connections>
+                                <segue destination="CMV-1V-g4R" kind="unwind" unwindAction="unwindToMealListWithSender:" id="nFP-n3-eix"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cancel" destination="C3h-kh-yCh" id="nTq-g7-gVN"/>
                         <outlet property="nameTextField" destination="W0J-ID-rvO" id="mxP-j9-xUi"/>
                         <outlet property="photoImageView" destination="1NW-B7-6IX" id="95o-qo-vyL"/>
                         <outlet property="ratingControl" destination="znl-Vl-dhg" id="V6r-as-b6H"/>
@@ -128,6 +137,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="CMV-1V-g4R" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="h8G-EM-oY4">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="fcT-8F-oGN"/>
